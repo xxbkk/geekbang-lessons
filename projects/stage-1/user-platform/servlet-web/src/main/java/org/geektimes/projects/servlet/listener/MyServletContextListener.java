@@ -16,7 +16,7 @@
  */
 package org.geektimes.projects.servlet.listener;
 
-import org.omg.PortableServer.ServantActivator;
+//import org.omg.PortableServer.PortableServerServantActivator;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;

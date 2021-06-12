@@ -36,7 +36,7 @@ public class MyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 //        chain.doFilter(new MyServletRequestWrapper(request), response);
-        AsyncContext asyncContext = request.startAsync(request, response);
+//        AsyncContext asyncContext = request.startAsync(request, response);
         System.out.println("MyFilter...");
         chain.doFilter(request, response);
     }

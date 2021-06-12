@@ -41,17 +41,17 @@ public class MyServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
         println(writer, "Hello,World");
 
-        AsyncContext asyncContext = request.getAsyncContext();
-
-        asyncContext.start(() -> {
-            try {
-                println(writer, "Hello,World");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-
-        asyncContext.complete(); // 异步完成
+//        AsyncContext asyncContext = request.getAsyncContext();
+//
+//        asyncContext.start(() -> {
+//            try {
+//                println(writer, "Hello,World");
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
+//
+//        asyncContext.complete(); // 异步完成
     }
 
     private static void println(Writer writer, Object message) throws IOException {
